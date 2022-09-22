@@ -23,3 +23,5 @@ It creates a self-contained, executable JAR in the `target` directory.
     -p,--port <PORT>            port to listen (default: 8888)
     -r,--root <DIR>             server root directory (default: '.')
     -t,--threads <THREADS_NO>   thread pool size (default: 10)
+    
+    test PR
