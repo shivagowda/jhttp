@@ -6,9 +6,9 @@ pipeline:
   properties:
     ci:
       codebase:
-        build: <+input>
         connectorRef: account.Github_OAuth_1699462990245
-        repoName: jhttp
+        repoName: dgarg-harness/jhttp
+        build: <+input>
   stages:
     - stage:
         identifier: build
