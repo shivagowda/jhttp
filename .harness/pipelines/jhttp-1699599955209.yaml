@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_jhttp_1699599957321
+  name: Build jhttp
+  orgIdentifier: default
+  projectIdentifier: default_project
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1699599947033
+        repoName: jhttp
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
